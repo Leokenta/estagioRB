@@ -1,0 +1,39 @@
+#Programa para Verificar Se um Número Pertence à Sequência de Fibonacci
+
+def is_fibonacci(num):
+    if num < 0:
+        return False
+    a, b = 0, 1
+    while a < num:
+        a, b = b, a + b
+    return a == num
+
+try:
+    number = int(input("Informe um número: "))
+    if is_fibonacci(number):
+        print(f"O número {number} pertence à sequência de Fibonacci.")
+    else:
+        print(f"O número {number} não pertence à sequência de Fibonacci.")
+except ValueError:
+    print("Por favor, informe um número inteiro válido.")
+
+
+#Programa para Contar a Ocorrência da Letra ‘a’ em uma String
+
+def count_letter_a(s):
+    return s.lower().count('a')
+
+input_string = input("Digite uma string: ")
+count = count_letter_a(input_string)
+print(f"A letra 'a' (maiúscula ou minúscula) aparece {count} vezes na string.")
+
+
+#Análise do Código Dado 
+
+int INDICE = 12, SOMA = 0, K = 1;
+enquanto K < INDICE faça {
+    K = K + 1;
+    SOMA = SOMA + K;
+}
+imprimir(SOMA);
+
